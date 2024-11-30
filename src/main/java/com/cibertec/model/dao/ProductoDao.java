@@ -9,4 +9,5 @@ public interface ProductoDao {
 
     List<Producto> listarProducto() throws SQLException;
     Producto obtenerProducto(int id) throws SQLException;
+    void registrarProducto(Producto producto) throws SQLException;
 }
