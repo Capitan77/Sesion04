@@ -20,10 +20,10 @@ public class ProductoDaoImpl implements ProductoDao {
         String query = "SELECT id, nombre, precio, stock, descuento FROM Productos";
 
 
-        try {
-            Connection connection = DBConnection.getConnector();
-            PreparedStatement statement = connection.prepareStatement(query);
-            ResultSet result = statement.executeQuery();// registros planos -- resultado de la consulta
+        try (  Connection connection = DBConnection.getConnector();
+               PreparedStatement statement = connection.prepareStatement(query);
+               ResultSet result = statement.executeQuery();)
+        {
 
             while(result.next()) {
                 Producto item = new Producto();
