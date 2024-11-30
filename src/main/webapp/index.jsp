@@ -20,6 +20,8 @@
 
             <div class="col-md-4">
                 <%= item.getNombre() %>
+                <%= item.getPrecio() %>
+                <%= item.getStock() %>
             </div>
 
         <% } %>

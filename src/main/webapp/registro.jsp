@@ -13,6 +13,19 @@
            <h1>Registrar Producto</h1>
 
            <form action="RegistroProductoServlet" method="POST">
+                     <div class="mb-3">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" name="nombre" required>
+                     </div>
+                      <div class="mb-3">
+                            <label for="precio" class="form-label">Nombre</label>
+                            <input type="number" class="form-control" id="precio" name="precio" required>
+                       </div>
+                     <div class="mb-3">
+                          <label for="stock" class="form-label">Nombre</label>
+                          <input type="number" class="form-control" id="stock" name="stock" required>
+                     </div>
+                     <button type="submit" class="btn btn-primary">Guardar</button>
 
 
            </form>
